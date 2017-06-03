@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="./game.css">
+	</head>
+	<body style="padding:0px;margin:0px" onload="init()" id="b">
+		<h2>五子棋</h2>
+		<h3>请先按下开始游戏按钮！</h3><br />
+		<h3>如果要调整黑白子开始请按黑棋先走或者白棋先走！</h3><br />
+		<div id="panel">
+			<button onclick="start_new_game()" class="settings">重置</button>
+			<input type="button" onclick="white_black_first_switch()" id="white_black_button" value="黑棋先走" class="settings">
+			<input type="button" onclick="start_with_setting()" id="new_game" value="开始游戏！" class="settings">
+		</div>
+		<script type="text/javascript" src="./game.js"></script>
+	</body>
+</html>
